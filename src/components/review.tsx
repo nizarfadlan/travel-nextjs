@@ -27,7 +27,6 @@ export const PeopleReview = () => {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -46,7 +45,7 @@ export const PeopleReview = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="mt-12">
       <Carousel
         responsive={responsive}
         swipeable={false}
