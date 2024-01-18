@@ -2,13 +2,12 @@ import { Banner } from "@/components/banner"
 import { TravelPackage } from "@/components/travelPackage"
 import { Footer } from "@/components/footer"
 import { MainHero } from "@/components/hero"
-import { MainLayout } from "@/components/layout"
+import MainLayout from "@/components/layout"
 import { PeopleReview } from "@/components/review"
 import { NextSeo } from "next-seo"
-import { Inter } from 'next/font/google'
 import Link from "next/link"
-
-const inter = Inter({ subsets: ['latin'] })
+import { getI18nProps } from "@/utils/i18n"
+import { useTranslation } from "next-i18next"
 
 const DEFAULT_SEO = {
   title: 'Bless Travel (blesstravel)',
@@ -31,11 +30,37 @@ const DEFAULT_SEO = {
   },
 }
 
+export const getStaticProps = getI18nProps
+
 export default function Home() {
+  const { t } = useTranslation('common')
+  const {
+    title: titleDestination,
+    description: descriptionDestination,
+    buttonMore: buttonMoreDestination,
+  }: {
+    title: string
+    description: string
+    buttonMore: string
+  } = t('destination', {  returnObjects: true })
+  const {
+    title: titleReview,
+    description: descriptionReview,
+  }: {
+    title: string
+    description: string
+  } = t('review', {  returnObjects: true })
+  const {
+    title: titleContact,
+    description: descriptionContact,
+  }: {
+    title: string
+    description: string
+  } = t('contact', {  returnObjects: true })
   return (
-    <>
+    <div>
       <NextSeo
-        title="Bless Travel (blesstravel)"
+        title="Bless Travel"
         description="Bless travel adalah Biro Perjalanan Wisata yang didukung dan dikelola oleh Agen Lokal Bali dengan tim yang sudah berpengalaman. kami telah melayani banyak berbagai pelanggan mulai dari Individu, Keluarga, Group maupun Perushaan. Hal ini tentu nya menjadikan kemudahan dan kenyamanan Anda pada saat berlibur di Pulau Dewata."
         openGraph={DEFAULT_SEO}
         additionalMetaTags={[
@@ -53,23 +78,23 @@ export default function Home() {
         <MainHero />
         <div className="px-5 md:px-20 py-10">
           <div className="flex flex-col items-center space-y-4">
-            <h4 className="text-4xl font-extrabold text-center">Top Travel Packages</h4>
+            <h4 className="text-4xl font-extrabold text-center">{titleDestination}</h4>
             <p className="w-full md:w-2/4 leading-relaxed text-gray-700 text-center text-normal md:text-sm">
-              We offer the best travel packages, there are several top travel packages that are good, interesting and much loved by customers.
+            {descriptionDestination}
             </p>
           </div>
           <TravelPackage />
           <div className="flex justify-center mt-10">
-            <button className="border-indigo-500 border py-3 px-20 w-full sm:w-auto text-indigo-500 font-semibold mt-10 rounded-full hover:bg-indigo-600 hover:text-white">
-              More
+            <button className="border-indigo-500 border py-3 px-6 w-max text-sm sm:w-auto text-indigo-500 font-semibold mt-10 rounded-full hover:bg-indigo-600 hover:text-white">
+              {buttonMoreDestination}
             </button>
           </div>
         </div>
         <div className="px-5 md:px-20 py-10">
           <div className="flex flex-col items-center space-y-4">
-            <h4 className="text-4xl font-extrabold text-center">What travellers say about us</h4>
+            <h4 className="text-4xl font-extrabold text-center">{titleReview}</h4>
             <p className="w-full md:w-2/4 leading-relaxed text-gray-700 text-center text-normal md:text-sm">
-              What they say about the travel packages we provide, these are direct testimonials from customers who have used our travel packages.
+              {descriptionReview}
             </p>
           </div>
           <PeopleReview />
@@ -79,13 +104,10 @@ export default function Home() {
             <div className="w-full lg:w-5/12 px-5 lg:px-20 flex flex-col justify-between">
               <div>
                 <h4 className="text-4xl font-bold">
-                  Protect yourself and your family’s future{" "}
+                {titleContact}
                 </h4>
                 <p className="text-gray-700 mt-4 text-normal md:text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptates expedita, quibusdam, consequuntur doloribus est, vel
-                  autem accusamus aut aperiam sed illo consectetur odit impedit
-                  distinctio! Laborum vitae itaque quo molestias.
+                  {descriptionContact}
                 </p>
               </div>
               <Link
@@ -103,6 +125,6 @@ export default function Home() {
         </div>
         <Footer />
       </MainLayout>
-    </>
+    </div>
   )
 }

@@ -1,6 +1,9 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Poppins } from 'next/font/google'
+import { useRouter } from 'next/router'
+import { useTranslation, appWithTranslation } from 'next-i18next'
+import { useEffect } from "react"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,6 +13,15 @@ const poppins = Poppins({
 })
 
 function App({ Component, pageProps }: AppProps) {
+  const { locale } = useRouter()
+  const { i18n } = useTranslation()
+
+  useEffect(() => {
+    if (i18n && i18n.changeLanguage) {
+      i18n.changeLanguage(locale)
+    }
+  }, [locale, i18n])
+
   return (
     <>
       <style jsx global>{`
@@ -24,4 +36,4 @@ function App({ Component, pageProps }: AppProps) {
   )
 }
 
-export default App
+export default appWithTranslation(App)

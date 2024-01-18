@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Mari ciptakan perjalanan terbaik Anda!",
+    "description": "Bless travel adalah Biro Perjalanan Wisata yang didukung dan dikelola oleh Agen Lokal Bali dengan tim yang sudah berpengalaman. kami telah melayani banyak berbagai pelanggan mulai dari Individu, Keluarga, Group maupun Perushaan. Hal ini tentu nya menjadikan kemudahan dan kenyamanan Anda pada saat berlibur di Pulau Dewata.",
+    "buttonExplore": "Jelajahi Sekarang"
+  },
+  "destination": {
+    "title": "Paket Perjalanan Teratas",
+    "description": "Kami menawarkan paket perjalanan terbaik, ada beberapa paket perjalanan terbaik yang bagus, menarik dan banyak digemari oleh pelanggan.",
+    "buttonMore": "Lihat Lebih Lanjut",
+    "buttonBook": "Pesan Sekarang"
+  },
+  "review": {
+    "title": "Apa yang wisatawan katakan tentang kami",
+    "description": "Apa yang mereka katakan tentang paket perjalanan yang kami sediakan, ini adalah testimoni langsung dari para pelanggan yang telah menggunakan paket perjalanan kami."
+  },
+  "contact": {
+    "title": "Hubungi kami untuk mengetahui informasi lebih lanjut",
+    "description": "Hubungi dan konsultasikan perjalanan wisata Anda bersama tim admin kami, dan kami akan mengutamakan kebutuhan Anda sebagai Pelanggan kami."
+  },
+  "navbar": {
+    "Home": "Beranda",
+    "Destination": "Destinasi"
+  },
+  "footer": {
+    "titleMenu": "MENU",
+    "titleLegal": "HUKUM",
+    "titleContact": "KONTAK",
+    "menu": {
+      "Home": "Beranda",
+      "Destination": "Destinasi",
+      "About": "Tentang Kami",
+      "Contact": "Kontak"
+    },
+    "legal": {
+      "Terms": "Syarat & Ketentuan",
+      "Privacy": "Kebijakan Privasi"
+    }
+  }
+}

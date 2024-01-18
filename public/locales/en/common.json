@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Let’s make your best trip ever!",
+    "description": "Bless travel is a travel agency that is supported and managed by local Bali agents with an experienced team. we have served many customers ranging from individuals, families, groups and companies. This of course makes it easy and comfortable for you while on vacation on the Island of the Gods.",
+    "buttonExplore": "Explore Now"
+  },
+  "destination": {
+    "title": "Top Travel Packages",
+    "description": "We offer the best travel packages, there are several top travel packages that are good, interesting and much loved by customers.",
+    "buttonMore": "See More",
+    "buttonBook": "Book Now"
+  },
+  "review": {
+    "title": "What travellers say about us",
+    "description": "What they say about the travel packages we provide, these are direct testimonials from customers who have used our travel packages."
+  },
+  "contact": {
+    "title": "Contact us to find out more information",
+    "description": "Contact and consult your travel with our admin team, and we will prioritize your needs as our Customer."
+  },
+  "navbar": {
+    "Home": "Home",
+    "Destination": "Destination"
+  },
+  "footer": {
+    "titleMenu": "MENU",
+    "titleLegal": "LEGAL",
+    "titleContact": "CONTACT",
+    "menu": {
+      "Home": "Home",
+      "Destination": "Destination",
+      "About": "About Us",
+      "Contact": "Contact Us"
+    },
+    "legal": {
+      "Terms": "Terms & Conditions",
+      "Privacy": "Privacy Policy"
+    }
+  }
+}

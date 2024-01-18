@@ -3,25 +3,46 @@ import { cn } from "@/utils"
 import ProviderMain, { useToggleNavbarMain } from "./context"
 import { usePathname } from "next/navigation"
 import Overlay from "./overlay"
+import { useCallback, useEffect, useState } from "react"
+import { useRouter } from "next/router"
+import { useTranslation } from "next-i18next"
 
-const routesMain = [
+export type routesMainType = {
+  name: string;
+  link: string;
+}
+
+const routesMain: routesMainType[] = [
   {
     name: "Home",
     link: "/",
   },
   {
-    name: "About Us",
-    link: "/about",
-  },
-  {
-    name: "Contact Us",
-    link: "/contact",
+    name: "Destination",
+    link: "#",
   },
 ]
 
 function Navbar() {
   const pathname = usePathname()
+  const router = useRouter()
   const { open, toggle, sticky } = useToggleNavbarMain()
+  const [language, setLanguage] = useState<string>()
+  const { t } = useTranslation('common', { keyPrefix: 'navbar' })
+
+  useEffect(() => {
+    const { locale } = router
+
+    setLanguage(locale || "id")
+  }, [router])
+
+  const handleChangeLanguage = useCallback(() => {
+    const { asPath } = router
+
+    router.push(asPath, asPath, { locale: language === "id" ? "en" : "id", scroll: false })
+    setLanguage((prevLanguage) => prevLanguage === "id" ? "en" : "id")
+  }, [language, router])
+
   return(
     <>
       <nav
@@ -40,7 +61,7 @@ function Navbar() {
               ? "text-white"
               : (open ? "text-white" : "text-black"),
             open ?
-                "bg-indigo-500"
+                "bg-indigo-500 rounded-b-md"
               :
                 sticky && "bg-indigo-500/80 backdrop-filter backdrop-blur shadow-lg shadow-primary-main/30 rounded-[14px]"
           )}
@@ -83,11 +104,28 @@ function Navbar() {
                         item.link === pathname && "active"
                       )}
                     >
-                      {item.name}
+                      {t(item.name)}
                     </Link>
                   </li>
                 ))}
               </div>
+              <button
+                key={language}
+                className="bg-transparent focus:outline-none focus:shadow-outline flex items-center drop-shadow-lg text-sm font-medium justify-center mt-4 md:mt-0 py-2 px-4 border rounded-full border-indigo-300 w-max mx-auto md:mx-0"
+                onClick={handleChangeLanguage}
+              >
+                {language === "en" ? (
+                  <>
+                    <img src="/images/en.svg" alt="flag-en" className="w-6 h-6 rounded-full mr-2" />
+                    EN
+                  </>
+                ): (
+                  <>
+                    <img src="/images/id.svg" alt="flag-id" className="w-6 h-6 rounded-full mr-2" />
+                    ID
+                  </>
+                )}
+              </button>
             </ul>
           </div>
         </div>
@@ -96,7 +134,7 @@ function Navbar() {
   )
 }
 
-export const MainLayout = ({
+const MainLayout = ({
   children
 }: {
   children: React.ReactNode
@@ -108,4 +146,6 @@ export const MainLayout = ({
       <div className="pt-24 lg:pt-18 px-4 sm:px-6 lg:px-14 xl:px-18">{children}</div>
     </ProviderMain>
   );
-};
+}
+
+export default MainLayout
