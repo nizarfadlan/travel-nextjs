@@ -11,7 +11,7 @@ export const dataTravelPackage: Destionation[] = [
   {
     slug: 'pura-tanah-lot',
     title: 'Pura Tanah Lot',
-    description: 'Pura Tanah Lot merupakan pura laut tempat pemujaan dewa-dewa penjaga laut. Tanah Lot yang artinya batukarang yang berada di tengah lautan. Tanah Lot terkenal sebagai tempat yang indah untuk melihat matahari terbenam',
+    description: 'Tanah Lot Temple is a sea temple where the gods of the sea are worshiped. Tanah Lot which means cougharang in the middle of the ocean. Tanah Lot is famous as a beautiful place to watch the sunset.',
     image: '/images/tanah-lot.webp',
     price: 2000000,
     rate: 4.9
@@ -19,7 +19,7 @@ export const dataTravelPackage: Destionation[] = [
   {
     slug: 'bedugul',
     title: 'Bedugul',
-    description: 'Pura Ulun Danu Beratan merupakan tempat menyembah Dewi Danu sang penguasa Danau dan juga Dewi Sri yaitu Dewi Padi. Pura ini berada di tengah Danau Beratan, Bedugul. Pura ini memiliki merupakan keindahan panorama tak terucapkan, yang berada pada ketinggian 850 M di atas permukaan laut',
+    description: 'Ulun Danu Beratan Temple is a place to worship Dewi Danu, the ruler of the lake and also Dewi Sri, the goddess of rice. The temple is located in the middle of Lake Beratan, Bedugul. This temple has an unspoken panoramic beauty, which is at an altitude of 850 meters above sea level.',
     image: '/images/bedugul.webp',
     price: 1500000,
     rate: 4.8
@@ -27,7 +27,7 @@ export const dataTravelPackage: Destionation[] = [
   {
     slug: 'nusa-penida',
     title: 'Nusa Penida',
-    description: 'Nusa Penida merupakan salah satu pulau yang berada di Bali. Nusa Penida memiliki keindahan alam yang sangat menakjubkan. Nusa Penida memiliki pantai yang sangat indah dan memiliki air yang sangat jernih',
+    description: 'Nusa Penida is one of the islands in Bali. Nusa Penida has an amazing natural beauty. Nusa Penida has very beautiful beaches and has very clear water.',
     image: '/images/nusa-penida.webp',
     price: 2500000,
     rate: 4.9
@@ -35,7 +35,7 @@ export const dataTravelPackage: Destionation[] = [
   {
     slug: 'gwk',
     title: 'Garuda Wisnu Kencana',
-    description: 'Garuda Wisnu Kencana merupakan patung Dewa Wisnu yang sedang mengendarai burung Garuda. Patung ini merupakan patung terbesar di dunia. Patung ini memiliki tinggi 120 meter dengan lebar 64 meter',
+    description: 'Garuda Wisnu Kencana is a statue of Lord Vishnu riding a Garuda bird. This statue is the largest statue in the world. This statue is 120 meters high and 64 meters wide.',
     image: '/images/gwk.webp',
     price: 1000000,
     rate: 4.7
