@@ -81,7 +81,7 @@ export default function Home() {
                 <h4 className="text-4xl font-bold">
                   Protect yourself and your family’s future{" "}
                 </h4>
-                <p className="leading-relaxed mt-5">
+                <p className="text-gray-700 mt-4 text-normal md:text-sm">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Voluptates expedita, quibusdam, consequuntur doloribus est, vel
                   autem accusamus aut aperiam sed illo consectetur odit impedit

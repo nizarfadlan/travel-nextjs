@@ -2,6 +2,7 @@ import Link from "next/link"
 import { cn } from "@/utils"
 import ProviderMain, { useToggleNavbarMain } from "./context"
 import { usePathname } from "next/navigation"
+import Overlay from "./overlay"
 
 const routesMain = [
   {
@@ -102,6 +103,7 @@ export const MainLayout = ({
 }) => {
   return (
     <ProviderMain>
+      <Overlay />
       <Navbar />
       <div className="pt-24 lg:pt-18 px-4 sm:px-6 lg:px-14 xl:px-18">{children}</div>
     </ProviderMain>

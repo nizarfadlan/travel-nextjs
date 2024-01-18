@@ -38,15 +38,6 @@ export const TravelPackage = () => {
                       </svg>
                       <label className="mx-2 text-sm">{item.rate}</label>
                     </div>
-                    <div className="flex">
-                      <h4 className="font-semibold text-indigo-500">
-                        {item.price.toLocaleString("id-ID", {
-                          style: "currency",
-                          currency: "IDR",
-                        })}
-                      </h4>
-                      <p className="text-gray-500 text-sm ml-1"> / Person</p>
-                    </div>
                   </div>
                   <div className="flex flex-col mt-1">
                     <div>

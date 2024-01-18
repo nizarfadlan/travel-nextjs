@@ -3,7 +3,6 @@ export type Destionation = {
   title: string;
   description: string;
   image: string;
-  price: number;
   rate?: number;
 }
 
@@ -13,7 +12,6 @@ export const dataTravelPackage: Destionation[] = [
     title: 'Pura Tanah Lot',
     description: 'Tanah Lot Temple is a sea temple where the gods of the sea are worshiped. Tanah Lot which means cougharang in the middle of the ocean. Tanah Lot is famous as a beautiful place to watch the sunset.',
     image: '/images/tanah-lot.webp',
-    price: 2000000,
     rate: 4.9
   },
   {
@@ -21,7 +19,6 @@ export const dataTravelPackage: Destionation[] = [
     title: 'Bedugul',
     description: 'Ulun Danu Beratan Temple is a place to worship Dewi Danu, the ruler of the lake and also Dewi Sri, the goddess of rice. The temple is located in the middle of Lake Beratan, Bedugul. This temple has an unspoken panoramic beauty, which is at an altitude of 850 meters above sea level.',
     image: '/images/bedugul.webp',
-    price: 1500000,
     rate: 4.8
   },
   {
@@ -29,7 +26,6 @@ export const dataTravelPackage: Destionation[] = [
     title: 'Nusa Penida',
     description: 'Nusa Penida is one of the islands in Bali. Nusa Penida has an amazing natural beauty. Nusa Penida has very beautiful beaches and has very clear water.',
     image: '/images/nusa-penida.webp',
-    price: 2500000,
     rate: 4.9
   },
   {
@@ -37,7 +33,6 @@ export const dataTravelPackage: Destionation[] = [
     title: 'Garuda Wisnu Kencana',
     description: 'Garuda Wisnu Kencana is a statue of Lord Vishnu riding a Garuda bird. This statue is the largest statue in the world. This statue is 120 meters high and 64 meters wide.',
     image: '/images/gwk.webp',
-    price: 1000000,
     rate: 4.7
   }
 ]
