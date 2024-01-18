@@ -5,7 +5,7 @@ import { PhoneCall } from "lucide-react"
 
 export const TravelPackage = () => {
   return (
-    <div className="w-full grid grid-cols-1 gap-7 mt-20 md:grid-cols-3 lg:grid-cols-4">
+    <div className="w-full grid grid-cols-1 gap-7 mt-20 md:grid-cols-3 xl:grid-cols-4">
       {dataTravelPackage.map((item, key) => (
         <div className="w-full md:max-w-[320px] hover:shadow-xl transition-all duration-300 ease-out rounded-lg" key={key}>
           <Link href={`https://api.whatsapp.com/send?phone=6281354490456&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20${item.title}`}>
