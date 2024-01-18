@@ -51,7 +51,7 @@ export const Banner = () => {
       >
         {dataReview.map((item, key) => (
           <div className="mx-2" key={key}>
-            <img src={item.image_url} className="aspect-video object-cover rounded-xl" />
+            <img src={item.image_url} className="aspect-video object-cover rounded-xl" alt={`image-${key}`} />
           </div>
         ))}
       </Carousel>

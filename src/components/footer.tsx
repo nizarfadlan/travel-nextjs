@@ -49,22 +49,22 @@ export const Footer = () => {
           <ul className="flex mt-2 text-2xl text-white">
             <li className="mr-3">
               <Link href="#">
-                <i className="fa-brands fa-facebook"></i>
+                <img src="/images/whatsapp.svg" alt="whatsapp" />
               </Link>
             </li>
             <li className="mr-3">
               <Link href="#">
-                <i className="fa-brands fa-instagram"></i>
+                <img src="/images/instagram.svg" alt="instagram" />
               </Link>
             </li>
             <li className="mr-3">
               <Link href="/">
-                <i className="fa-brands fa-x-twitter"></i>
+                <img src="/images/facebook.svg" alt="facebook" />
               </Link>
             </li>
             <li className="mr-3">
               <Link href="/">
-                <i className="fa-brands fa-whatsapp"></i>
+                <img src="/images/x-twitter.svg" alt="twitter" />
               </Link>
             </li>
           </ul>
