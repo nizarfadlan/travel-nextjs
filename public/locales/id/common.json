@@ -16,7 +16,8 @@
   },
   "contact": {
     "title": "Hubungi kami untuk mengetahui informasi lebih lanjut",
-    "description": "Hubungi dan konsultasikan perjalanan wisata Anda bersama tim admin kami, dan kami akan mengutamakan kebutuhan Anda sebagai Pelanggan kami."
+    "description": "Hubungi dan konsultasikan perjalanan wisata Anda bersama tim admin kami, dan kami akan mengutamakan kebutuhan Anda sebagai Pelanggan kami.",
+    "buttonContact": "Hubungi Kami"
   },
   "navbar": {
     "Home": "Beranda",

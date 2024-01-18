@@ -53,9 +53,11 @@ export default function Home() {
   const {
     title: titleContact,
     description: descriptionContact,
+    buttonContact
   }: {
     title: string
     description: string
+    buttonContact: string
   } = t('contact', {  returnObjects: true })
   return (
     <div>
@@ -115,7 +117,7 @@ export default function Home() {
                 href="https://api.whatsapp.com/send?phone=6281354490456&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20"
                 target="_blank"
               >
-                Contact Us
+                {buttonContact}
               </Link>
             </div>
             <div className="w-full lg:w-7/12">

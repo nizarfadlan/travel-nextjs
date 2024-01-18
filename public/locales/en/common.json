@@ -16,7 +16,8 @@
   },
   "contact": {
     "title": "Contact us to find out more information",
-    "description": "Contact and consult your travel with our admin team, and we will prioritize your needs as our Customer."
+    "description": "Contact and consult your travel with our admin team, and we will prioritize your needs as our Customer.",
+    "buttonContact": "Contact Us"
   },
   "navbar": {
     "Home": "Home",
