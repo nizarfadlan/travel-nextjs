@@ -77,7 +77,7 @@ export default function Home() {
         <div className="py-20">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="w-full lg:w-5/12 px-5 lg:px-20 flex flex-col justify-between">
-              <div>
+              <div className="mb-4 lg:mb-0">
                 <h4 className="text-4xl font-bold">
                   Protect yourself and your family’s future{" "}
                 </h4>
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
               <Link
                 className="bg-indigo-500 rounded-full px-5 py-3 shadow-md text-white w-max font-medium text-sm hover:bg-indigo-600 mt-5"
-                href="https://wa.me/6281354490456?text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20"
+                href="https://api.whatsapp.com/send?phone=6281354490456&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20"
                 target="_blank"
               >
                 Contact Us
