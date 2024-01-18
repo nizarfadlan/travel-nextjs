@@ -75,9 +75,9 @@ export default function Home() {
           <PeopleReview />
         </div>
         <div className="py-20">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
+          <div className="flex flex-col lg:flex-row justify-between items-center mb-4 lg:mb-0">
             <div className="w-full lg:w-5/12 px-5 lg:px-20 flex flex-col justify-between">
-              <div className="mb-4 lg:mb-0">
+              <div>
                 <h4 className="text-4xl font-bold">
                   Protect yourself and your family’s future{" "}
                 </h4>
