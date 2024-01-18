@@ -34,13 +34,13 @@ export const Banner = () => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 500, min: 500 },
+      breakpoint: { max: 767, min: 0 },
       items: 1,
     },
   };
 
   return (
-    <div>
+    <div className="mt-12 lg:mt-0">
       <Carousel
         responsive={responsive}
         swipeable={true}
@@ -48,6 +48,7 @@ export const Banner = () => {
         showDots={false}
         infinite={true}
         autoPlay={true}
+        removeArrowOnDeviceType={["tablet", "mobile"]}
       >
         {dataReview.map((item, key) => (
           <div className="mx-2" key={key}>

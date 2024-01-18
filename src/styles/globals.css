@@ -207,3 +207,7 @@ body {
 .carousel-container {
   width: 100%;
 }
+
+[dir="rtl"] .carousel-container{
+  direction: ltr;
+}

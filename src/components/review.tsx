@@ -39,7 +39,7 @@ export const PeopleReview = () => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 500, min: 500 },
+      breakpoint: { max: 767, min: 0 },
       items: 1,
     },
   };
