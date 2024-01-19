@@ -114,7 +114,7 @@ export default function Home() {
               </div>
               <Link
                 className="bg-indigo-500 rounded-full px-5 py-3 shadow-md text-white w-max font-medium text-sm hover:bg-indigo-600 mt-5"
-                href="https://api.whatsapp.com/send?phone=6281354490456&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20"
+                href="https://api.whatsapp.com/send?phone=6282124038101&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20"
                 target="_blank"
               >
                 {buttonContact}
