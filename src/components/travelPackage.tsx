@@ -16,7 +16,7 @@ export const TravelPackage = () => {
     <div className="w-full grid grid-cols-1 gap-7 mt-20 md:grid-cols-3 xl:grid-cols-4">
       {dataTravelPackage.map((item, key) => (
         <div className="relative w-full md:max-w-[320px] hover:shadow-xl transition-all duration-300 ease-out rounded-lg flex flex-col justify-between" key={key}>
-          <Link href={`https://api.whatsapp.com/send?phone=6281354490456&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20${item.title}`}>
+          <Link href={`https://api.whatsapp.com/send?phone=62811385515&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20${item.title}`}>
             <img
               src={item.image}
               className="w-full h-[183px] md:w-[320px]  aspect-video object-cover rounded-t-lg hover:opacity-75"
@@ -58,7 +58,7 @@ export const TravelPackage = () => {
                 </div>
               </div>
             </div>
-            <Link href={`https://api.whatsapp.com/send?phone=6281354490456&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20${item.title}`} className="bg-indigo-500 px-6 py-3 rounded-xl text-white text-sm font-medium hover:bg-indigo-600 w-max ml-auto cursor-pointer" target="_black">
+            <Link href={`https://api.whatsapp.com/send?phone=62811385515&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20${item.title}`} className="bg-indigo-500 px-6 py-3 rounded-xl text-white text-sm font-medium hover:bg-indigo-600 w-max ml-auto cursor-pointer" target="_black">
               <PhoneCall className="inline mr-2" size={16} />
               {buttonBook}
             </Link>
