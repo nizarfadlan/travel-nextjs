@@ -14,10 +14,6 @@ const routesMenuFooter = [
     name: "About",
     link: "#",
   },
-  {
-    name: "Contact",
-    link: "#",
-  },
 ]
 
 const routesLegalFooter = [
