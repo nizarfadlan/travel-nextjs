@@ -39,8 +39,8 @@ function Navbar() {
   const handleChangeLanguage = useCallback(() => {
     const { asPath } = router
 
-    router.push(asPath, asPath, { locale: language === "id" ? "en" : "id", scroll: false })
-    setLanguage((prevLanguage) => prevLanguage === "id" ? "en" : "id")
+    router.push(asPath, asPath, { locale: language === "en" ? "id" : "en", scroll: false })
+    setLanguage((prevLanguage) => prevLanguage === "en" ? "id" : "en")
   }, [language, router])
 
   return(
@@ -115,15 +115,15 @@ function Navbar() {
                 className="bg-transparent focus:outline-none focus:shadow-outline flex items-center drop-shadow-lg text-sm font-medium justify-center mt-4 md:mt-0 py-2 px-4 border rounded-full border-indigo-300 w-max mx-auto md:mx-0"
                 onClick={handleChangeLanguage}
               >
-                {language === "en" ? (
-                  <>
-                    <img src="/images/en.svg" alt="flag-en" className="w-6 h-6 rounded-full mr-2" />
-                    EN
-                  </>
-                ): (
+                {language === "id" ? (
                   <>
                     <img src="/images/id.svg" alt="flag-id" className="w-6 h-6 rounded-full mr-2" />
                     ID
+                  </>
+                ): (
+                  <>
+                    <img src="/images/en.svg" alt="flag-en" className="w-6 h-6 rounded-full mr-2" />
+                    EN
                   </>
                 )}
               </button>
