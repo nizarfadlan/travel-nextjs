@@ -13,7 +13,7 @@ export const Banner = () => {
     },
     {
       image_url:
-        "/images/nusa-penida.webp",
+        "/images/nusa-penida.jpg",
     },
     {
       image_url: "/images/tanah-lot.webp",

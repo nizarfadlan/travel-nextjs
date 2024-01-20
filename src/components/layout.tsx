@@ -33,7 +33,7 @@ function Navbar() {
   useEffect(() => {
     const { locale } = router
 
-    setLanguage(locale || "id")
+    setLanguage(locale || "en")
   }, [router])
 
   const handleChangeLanguage = useCallback(() => {
@@ -68,7 +68,8 @@ function Navbar() {
         >
           <div className="relative flex flex-col max-w-screen-xl px-2 mx-auto md:items-center md:flex-row md:px-6 lg:px-8">
             <div className="flex flex-row items-center justify-between p-4 w-full lg:w-1/7">
-              <Link href="#" className="tracking-wider focus:outline-none focus:shadow-outline">
+              <Link href="#" className="tracking-wider focus:outline-none focus:shadow-outline flex items-center">
+                <img src="/logo.jpeg" alt="logo" className="w-12 h-12 rounded-full" />
                 <h4 className="flex flex-col font-extrabold text-2xl lg:text-3xl ml-2">Bless Travel</h4>
               </Link>
               <button

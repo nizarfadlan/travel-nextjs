@@ -4,30 +4,33 @@ import { Footer } from "@/components/footer"
 import { MainHero } from "@/components/hero"
 import MainLayout from "@/components/layout"
 import { PeopleReview } from "@/components/review"
-import { NextSeo } from "next-seo"
+import { NextSeo, NextSeoProps } from "next-seo"
 import Link from "next/link"
 import { getI18nProps } from "@/utils/i18n"
 import { useTranslation } from "next-i18next"
 
-const DEFAULT_SEO = {
-  title: 'Bless Travel (blesstravel)',
+const DEFAULT_SEO: NextSeoProps = {
+  title: 'Bless Travel',
   description: 'Bless travel adalah Biro Perjalanan Wisata yang didukung dan dikelola oleh Agen Lokal Bali dengan tim yang sudah berpengalaman. kami telah melayani banyak berbagai pelanggan mulai dari Individu, Keluarga, Group maupun Perushaan. Hal ini tentu nya menjadikan kemudahan dan kenyamanan Anda pada saat berlibur di Pulau Dewata.',
+  canonical: "https://blesstravel.vercel.app",
   openGraph: {
     type: 'website',
-    locale: 'en_IE',
+    locale: 'id',
     url: 'https://blesstravel.vercel.app',
     title: 'Bless Travel (blesstravel)',
     description: 'Bless travel adalah Biro Perjalanan Wisata yang didukung dan dikelola oleh Agen Lokal Bali dengan tim yang sudah berpengalaman. kami telah melayani banyak berbagai pelanggan mulai dari Individu, Keluarga, Group maupun Perushaan. Hal ini tentu nya menjadikan kemudahan dan kenyamanan Anda pada saat berlibur di Pulau Dewata.',
-    image:
-      'https://prismic-io.s3.amazonaws.com/gary-blog%2F3297f290-a885-4cc6-9b19-3235e3026646_default.jpg',
-    site_name: 'blesstravel.vercel.app',
-    imageWidth: 1200,
-    imageHeight: 1200,
+    images: [
+      {
+        url: "https://blesstravel.vercel.app/logo.jpeg",
+      }
+    ],
+    siteName: 'blesstravel.vercel.app',
   },
   twitter: {
     handle: '@garmeeh',
     cardType: 'summary_large_image',
   },
+
 }
 
 export const getStaticProps = getI18nProps
@@ -62,9 +65,7 @@ export default function Home() {
   return (
     <div>
       <NextSeo
-        title="Bless Travel"
-        description="Bless travel adalah Biro Perjalanan Wisata yang didukung dan dikelola oleh Agen Lokal Bali dengan tim yang sudah berpengalaman. kami telah melayani banyak berbagai pelanggan mulai dari Individu, Keluarga, Group maupun Perushaan. Hal ini tentu nya menjadikan kemudahan dan kenyamanan Anda pada saat berlibur di Pulau Dewata."
-        openGraph={DEFAULT_SEO}
+        {...DEFAULT_SEO}
         additionalMetaTags={[
           {
             property: "dc:creator",

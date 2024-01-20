@@ -13,13 +13,13 @@ export const TravelPackage = () => {
   } = t('destination', {  returnObjects: true })
 
   return (
-    <div className="w-full grid grid-cols-1 gap-7 mt-20 md:grid-cols-3 xl:grid-cols-4">
+    <div className="w-full grid grid-cols-1 gap-6 mt-20 md:grid-cols-2 lg:grid-cols-3">
       {dataTravelPackage.map((item, key) => (
-        <div className="relative w-full md:max-w-[320px] hover:shadow-xl transition-all duration-300 ease-out rounded-lg flex flex-col justify-between" key={key}>
+        <div className="relative w-full md:max-w-[380px] hover:shadow-xl transition-all duration-300 ease-out rounded-lg flex flex-col justify-between" key={key}>
           <Link href={`https://api.whatsapp.com/send?phone=62811385515&text=Halo%20saya%20ingin%20pesan%20paket%20wisata%20${item.title}`}>
             <img
               src={item.image}
-              className="w-full h-[183px] md:w-[320px]  aspect-video object-cover rounded-t-lg hover:opacity-75"
+              className="w-full h-[183px] md:w-[380px]  aspect-video object-cover rounded-t-lg hover:opacity-75"
               alt={item.title}
               />
           </Link>
@@ -46,6 +46,14 @@ export const TravelPackage = () => {
                       </g>
                     </svg>
                     <p className="mx-2 text-sm">{item.rate}</p>
+                  </div>
+                  <div className="flex">
+                    <h4 className="font-semibold text-indigo-500">
+                      {item.price.toLocaleString("id-ID", {
+                        style: "currency",
+                        currency: "IDR",
+                      })}
+                    </h4>
                   </div>
                 </div>
                 <div className="flex flex-col mt-1">
